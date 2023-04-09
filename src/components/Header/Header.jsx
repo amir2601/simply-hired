@@ -10,7 +10,7 @@ const Header = () => {
                 <Link to="/appliedJobs">Applied Jobs</Link>
                 <Link to="/blog">Blog</Link>
             </nav> */}
-            <div className="navbar bg-base-100 w-4/6 mx-auto">
+            <div className="navbar bg-base-100 w-5/6 mx-auto">
                 <div className="navbar-start text-2xl font-bold">
                     <Link to="/">Simply Hired</Link>
                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
@@ -23,8 +23,11 @@ const Header = () => {
                         <Link to="/blog">Blog</Link>
                     </nav>
                 </div>
+                {/* <div>
+                    <button className='btn btn-primary'>Star Applying</button>
+                </div> */}
                 <div className="navbar-end">
-                    <a className="btn btn-primary">Star Applying</a>
+                    <a className="btn btn-primary text-white">Star Applying</a>
                 </div>
             </div>
         </div>

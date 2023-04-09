@@ -4,33 +4,31 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    daisyui: {
-      themes: [
-        {
-          mytheme: {
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
 
-            "primary": "#ca3af2",
+          "primary": "#7E90FE",
 
-            "secondary": "#931210",
+          "secondary": "#931210",
 
-            "accent": "#e3bef7",
+          "accent": "#e3bef7",
 
-            "neutral": "#253341",
+          "neutral": "#253341",
 
-            "base-100": "#FFFFFF",
+          "base-100": "#FFFFFF",
 
-            "info": "#9CCFED",
+          "info": "#9CCFED",
 
-            "success": "#76EACB",
+          "success": "#76EACB",
 
-            "warning": "#CA7A12",
+          "warning": "#CA7A12",
 
-            "error": "#F15560",
-          },
+          "error": "#F15560",
         },
-      ],
-    },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 }
