@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import JobDetails from '../JobDetailes/JobDetails';
 
 const FeaturedJob = ({featuredJob}) => {
-    // const [singleJob, setSingleJob] = useState();
 
     const handleShowDetails = (id) => {
         console.log(typeof id);
@@ -11,8 +10,6 @@ const FeaturedJob = ({featuredJob}) => {
         localStorage.setItem('job-details', JSON.stringify(searchObject));
         console.log(searchObject);
     }
-
-    // console.log(singleJob);
 
     return (
         <div>
