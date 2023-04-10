@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1",
+        "img": "../assets/Logo/google-1-1 1.png",
+        "company_name": "Google LLC",
+        "position": "Technical Database Engineer",
+        "job_type": "Remote",
+        "job_time": "Full-Time",
+        "salary": "100k-150k",
+        "job_location": "Dhaka, Bangladesh"
+    },
+    {
+        "id": "2",
+        "img": "../assets/Logo/netflix-4 1.png",
+        "company_name": "Netflix",
+        "position": "Senior Product Designer",
+        "job_type": "Onsite",
+        "job_time": "Part-Time",
+        "salary": "100k-150k",
+        "job_location": "Dhaka, Bangladesh"
+    },
+    {
+        "id": "3",
+        "img": "../assets/Logo/tesla-9 1.png",
+        "company_name": "Tesla",
+        "position": "Software Engineer",
+        "job_type": "Remote",
+        "job_time": "Full-Time",
+        "salary": "100k-150k",
+        "job_location": "New York, Usa"
+    },
+    {
+        "id": "4",
+        "img": "../assets/Logo/ollyo.png",
+        "company_name": "Ollyo",
+        "position": "Senior Analyst, Tech Support at Ollyo",
+        "job_type": "Onsite",
+        "job_time": "Part-Time",
+        "salary": "100k-150k",
+        "job_location": "Dhaka, Bangladesh"
+    },
+    {
+        "id": "5",
+        "img": "../assets/Logo/umbrella.png",
+        "company_name": "Umbrella Corporation",
+        "position": "Technical Support",
+        "job_type": "Remote",
+        "job_time": "Full-Time",
+        "salary": "100k-150k",
+        "job_location": "Khalishpur, Khulna"
+    },
+    {
+        "id": "6",
+        "img": "../assets/Logo/stark.png",
+        "company_name": "Stark Industries",
+        "position": "Machine Learning",
+        "job_type": "Onsite",
+        "salary": "100k-150k",
+        "job_location": "Miami, Usa"
+    }
+]
