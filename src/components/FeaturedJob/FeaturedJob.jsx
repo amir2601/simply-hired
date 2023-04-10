@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import JobDetails from '../JobDetailes/JobDetails';
 
 const FeaturedJob = ({featuredJob}) => {
-    console.log(featuredJob);
+    const [singleJob, setSingleJob] = useState([]);
+
+    const handleShowDetails = (id) => {
+        const searchObject = featuredJob.find((j) => j.id == 1);
+        console.log(id, featuredJob);
+        console.log(searchObject);
+    }
 
     return (
         <div>
@@ -19,8 +27,8 @@ const FeaturedJob = ({featuredJob}) => {
                             <small className='border border-blue-700 rounded-md py-2 px-4 mr-3'>{job.job_type}</small>
                             <small className='border border-blue-700 rounded-md py-2 px-4'>{job.job_time}</small>
                         </div>
-                        <p>{job.job_location}</p>
-                        <button>View Details</button>
+                        <p className='mb-5'>{job.job_location}</p>
+                        <Link to="/jobDetails" className='bg-blue-400 py-2 px-4 rounded-lg text-white'><button onClick={() => handleShowDetails(job.id)} href="">View Details</button></Link>
                         </div>)
                 }
             </div>

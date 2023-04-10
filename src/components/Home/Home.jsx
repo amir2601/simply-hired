@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import JobCategory from '../../JobCategory/JobCategory';
+import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
 

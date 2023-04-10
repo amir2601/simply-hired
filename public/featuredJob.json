@@ -4,58 +4,90 @@
         "img": "../assets/Logo/google-1-1 1.png",
         "company_name": "Google LLC",
         "position": "Technical Database Engineer",
+        "phone": "0171564248",
+        "email": "google@gmail.com",
         "job_type": "Remote",
         "job_time": "Full-Time",
         "salary": "100k-150k",
-        "job_location": "Dhaka, Bangladesh"
+        "job_location": "Dhaka, Bangladesh",
+        "job_des": "Database Engineers administer, test, and implement computer databases, applying knowledge of database management systems. Coordinate changes to computer databases. Identify, investigate, and resolve database performance issues, database capacity, and database scalability.",
+        "job_res": "Works with researchers, statisticians, and faculty to develop data analysis, quality control, and reporting plans for research projects. Supports the current programs that researchers and faculty use to access the DCCs data entry, management, and retrieval systems.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     },
     {
         "id": "2",
         "img": "../assets/Logo/netflix-4 1.png",
         "company_name": "Netflix",
         "position": "Senior Product Designer",
+        "phone": "01711557799",
+        "email": "netflix@gmail.com",
         "job_type": "Onsite",
         "job_time": "Part-Time",
         "salary": "100k-150k",
-        "job_location": "Dhaka, Bangladesh"
+        "job_location": "Dhaka, Bangladesh",
+        "job_des": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     },
     {
         "id": "3",
         "img": "../assets/Logo/tesla-9 1.png",
         "company_name": "Tesla",
         "position": "Software Engineer",
+        "phone": "01707453344",
+        "email": "tesla@gmail.com",
         "job_type": "Remote",
         "job_time": "Full-Time",
         "salary": "100k-150k",
-        "job_location": "New York, Usa"
+        "job_location": "New York, Usa",
+        "job_des": "We are looking for a skilled software engineer who, along with our excellent software development team, will be responsible for working on projects that are currently being developed on by our company. Duties will include but are not limited to developing and directing software system validation and testing methods, as well as directing our software programming initiatives. You will also be working closely with clients and cross-functional departments to communicate project statuses and proposals.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     },
     {
         "id": "4",
         "img": "../assets/Logo/ollyo.png",
         "company_name": "Ollyo",
-        "position": "Senior Analyst, Tech Support at Ollyo",
+        "position": "Senior Analyst, Tech Support",
+        "phone": "01742381275",
+        "email": "ollyo@gmail.com",
         "job_type": "Onsite",
         "job_time": "Part-Time",
         "salary": "100k-150k",
-        "job_location": "Dhaka, Bangladesh"
+        "job_location": "Dhaka, Bangladesh",
+        "job_des": "The Senior Technical Analyst will provide high-level technical support and systems analysis to identify, prevent, and resolve service interruptions in the organizations networks and systems.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     },
     {
         "id": "5",
         "img": "../assets/Logo/umbrella.png",
         "company_name": "Umbrella Corporation",
         "position": "Technical Support",
+        "phone": "01704980145",
+        "email": "umbrella@gmail.com",
         "job_type": "Remote",
         "job_time": "Full-Time",
         "salary": "100k-150k",
-        "job_location": "Khalishpur, Khulna"
+        "job_location": "Khalishpur, Khulna",
+        "job_des": "Database Engineers administer, test, and implement computer databases, applying knowledge of database management systems. Coordinate changes to computer databases. Identify, investigate, and resolve database performance issues, database capacity, and database scalability.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     },
     {
         "id": "6",
         "img": "../assets/Logo/stark.png",
         "company_name": "Stark Industries",
         "position": "Machine Learning",
+        "phone": "01725401800",
+        "email": "stark@gmail.com",
         "job_type": "Onsite",
         "salary": "100k-150k",
-        "job_location": "Miami, Usa"
+        "job_location": "Miami, Usa",
+        "job_des": "We are looking for a highly capable machine learning engineer to optimize our machine learning systems. You will be evaluating existing machine learning (ML) processes, performing statistical analysis to resolve data set problems, and enhancing the accuracy of our AI software's predictive automation capabilities.",
+        "job_res": "Consulting with managers to determine and refine machine learning objectives. Designing machine learning systems and self-running artificial intelligence (AI) software to automate predictive models. Documenting machine learning processes.",
+        "edu_req:": "Bachelor degree to complete any reputational university.",
+        "exp": "2-3 Years in this field."
     }
 ]
