@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import JobDetails from '../JobDetailes/JobDetails';
 
 const FeaturedJob = ({featuredJob}) => {
-    const [singleJob, setSingleJob] = useState([]);
+    // const [singleJob, setSingleJob] = useState();
 
     const handleShowDetails = (id) => {
-        const searchObject = featuredJob.find((j) => j.id == 1);
-        console.log(id, featuredJob);
+        console.log(typeof id);
+        const searchObject = featuredJob.find((j) => j.id == parseInt(id));
+        localStorage.setItem('job-details', JSON.stringify(searchObject));
         console.log(searchObject);
     }
+
+    // console.log(singleJob);
 
     return (
         <div>
