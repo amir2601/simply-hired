@@ -11,6 +11,8 @@ const FeaturedJob = ({featuredJob}) => {
         console.log(searchObject);
     }
 
+    console.log(featuredJob);
+
     return (
         <div>
             <div className='text-center pt-10'>
