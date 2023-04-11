@@ -5,6 +5,12 @@ const AppliedJobs = () => {
     const applied = useLoaderData();
     console.log(applied);
 
+    const handleShowDetails = (id) => {
+        console.log(typeof id);
+        const searchObject = applied.find((j) => j.id == parseInt(id));
+        localStorage.setItem('job-details', JSON.stringify(searchObject));
+    }
+
 
     return (
         <div className='w-5/6 mx-auto'>
@@ -37,29 +43,10 @@ const AppliedJobs = () => {
                                     <span>Salary: {job.salary}</span>
                                 </div>
                             </div>
-                            <Link to="/jobDetails"><button className='btn btn-primary text-white'>View Details</button></Link>
+                            <Link onClick={() => handleShowDetails(job.id)} to="/jobDetails"><button className='btn btn-primary text-white'>View Details</button></Link>
                         </div>
                     </div>)
                 }
-
-                {/* <div className='bg-gray-100 p-8'>
-                    <img src="../../../assets/Logo/google-1-1 1.png" alt="" />
-                </div>
-                <div className='flex items-center'>
-                    <div>
-                        <h2 className='text-lg font-bold'>Technical Database Engineer</h2>
-                        <p>Google LLC</p>
-                        <div className='my-3'>
-                            <small className='border border-blue-700 rounded-md py-2 px-4 mr-3'>Job Type</small>
-                            <small className='border border-blue-700 rounded-md py-2 px-4'>Job Time</small>
-                        </div>
-                        <div className='flex gap-3'>
-                            <span>Dhaka, Bangladesh</span>
-                            <span>Salary : 70K - 90K</span>
-                        </div>
-                    </div>
-                    <Link to="/jobDetails"><button className='btn btn-primary md:ms-[500px] text-white'>View Details</button></Link>
-                </div> */}
             </div>
         </div>
     );
