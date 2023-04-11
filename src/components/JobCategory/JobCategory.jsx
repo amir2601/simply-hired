@@ -8,7 +8,7 @@ const JobCategory = ({joblist}) => {
             </div>
             <div className="grid md:grid-cols-4 w-4/6 mx-auto gap-4 mb-10">
                 {
-                    joblist.map(job => <div key={job.id} className="border border-blue-700 rounded-md p-5 bg-sky-100">
+                    joblist.map(job => <div key={job.id} className="border border-gray-200 rounded-md p-5 bg-sky-50 shadow-md">
                         <img src={job.img} alt="" />
                         <h2 className="my-3 font-semibold text-lg">{job.position}</h2>
                         <small>{job.job_available} Jobs Available</small>

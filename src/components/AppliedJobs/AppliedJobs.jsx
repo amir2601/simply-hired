@@ -4,7 +4,6 @@ import { Link, useLoaderData } from 'react-router-dom';
 const AppliedJobs = () => {
     const applieds = useLoaderData();
     const [applied, setApplied] = useState(applieds)
-    // console.log(applied);
 
     const handleFilterJobs = (filterData) => {
         const remoteJob = applieds.filter(job => job.job_type == filterData)

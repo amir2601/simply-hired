@@ -21,7 +21,7 @@ const Header = () => {
                     <button className='btn btn-primary'>Star Applying</button>
                 </div> */}
                 <div className="navbar-end">
-                    <a className="btn btn-primary text-white">Start Applying</a>
+                    <a className="btn btn-primary bg-gradient-to-r from-blue-400 to-blue-700 text-white">Start Applying</a>
                 </div>
             </div>
         </div>

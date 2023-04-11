@@ -6,7 +6,6 @@ import FeaturedJob from '../FeaturedJob/FeaturedJob';
 const Home = () => {
 
     const featuredJob = useLoaderData()
-    // console.log(featuredJob);
 
     const [joblist, setJoblist] = useState([])
 
@@ -29,7 +28,7 @@ const Home = () => {
                         <p className='my-6'>
                             Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it. Manage all <br /> your job application from start to finish.
                         </p>
-                        <button className='btn btn-primary text-white'>Get Started</button>
+                        <button className='btn btn-primary text-white bg-gradient-to-r from-blue-400 to-blue-700'>Get Started</button>
                     </div>
                 </div>
                 <div>

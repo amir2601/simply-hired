@@ -43,11 +43,13 @@ const JobDetails = () => {
                     </p>
                 </div>
                 <div className='mx-auto w-5/6 md:w-2/6'>
-                    <div className='py-5 px-10 bg-gradient-to-r from-sky-100 to-sky-400 rounded-lg'>
+                    <div className='py-5 px-10 bg-gradient-to-r from-blue-100 to-blue-300 rounded-lg'>
                         <h2 className='text-xl font-bold mb-8'>Job Details</h2>
+                        <hr className='border border-black mb-5' />
                         <p className='mb-4'><span className='text-lg font-semibold'>Salary :</span> {salary} (Per Month)</p>
                         <p className='mb-4'><span className='text-lg font-semibold'>Job Title :</span> {position}</p>
-                        <h2 className='text-xl font-bold mb-8'>Job Details</h2>
+                        <h2 className='text-xl font-bold mb-8'>Contact Information:</h2>
+                        <hr className='border border-black mb-5' />
                         <p className='mb-4'><span className='text-lg font-semibold'>Phone :</span> {phone}</p>
                         <p className='mb-4'><span className='text-lg font-semibold'>Email :</span> {email}</p>
                         <p className='mb-4'><span className='text-lg font-semibold'>Address :</span> {job_location}</p>
