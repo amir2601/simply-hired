@@ -16,27 +16,28 @@ const AppliedJobs = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-8 flex gap-3 flex-col md:flex-row md:px-5'>
+            <div className='mt-8 gap-3 md:px-5'>
 
                 {
-                    applied.map(job => <div>
-                        <div className='bg-gray-100 p-8'>
-                            <img src="../../../assets/Logo/google-1-1 1.png" alt="" />
+                    applied.map(job => 
+                    <div key={job.id} className='flex mb-5 gap-5'>
+                        <div className='bg-gray-100 p-8 flex items-center justify-center w-1/6'>
+                            <img src={job.img} alt="" />
                         </div>
-                        <div className='flex items-center'>
+                        <div className='tems-center w-5/6 flex justify-between items-center'>
                             <div>
-                                <h2 className='text-lg font-bold'>Technical Database Engineer</h2>
-                                <p>Google LLC</p>
+                                <h2 className='text-lg font-bold'>{job.position}</h2>
+                                <p>{job.company_name}</p>
                                 <div className='my-3'>
-                                    <small className='border border-blue-700 rounded-md py-2 px-4 mr-3'>Job Type</small>
-                                    <small className='border border-blue-700 rounded-md py-2 px-4'>Job Time</small>
+                                    <small className='border border-blue-700 rounded-md py-2 px-4 mr-3'>{job.job_type}</small>
+                                    <small className='border border-blue-700 rounded-md py-2 px-4'>{job.job_time}</small>
                                 </div>
                                 <div className='flex gap-3'>
-                                    <span>Dhaka, Bangladesh</span>
-                                    <span>Salary : 70K - 90K</span>
+                                    <span>{job.job_location}</span>
+                                    <span>Salary: {job.salary}</span>
                                 </div>
                             </div>
-                            <Link to="/jobDetails"><button className='btn btn-primary md:ms-[500px] text-white'>View Details</button></Link>
+                            <Link to="/jobDetails"><button className='btn btn-primary text-white'>View Details</button></Link>
                         </div>
                     </div>)
                 }
