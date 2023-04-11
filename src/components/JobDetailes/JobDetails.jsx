@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { addToDb } from '../../Utils/fakedb';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollarSign, faCalendarCheck, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const JobDetails = () => {
 
@@ -46,13 +48,13 @@ const JobDetails = () => {
                     <div className='py-5 px-10 bg-gradient-to-r from-blue-100 to-blue-300 rounded-lg'>
                         <h2 className='text-xl font-bold mb-8'>Job Details</h2>
                         <hr className='border border-black mb-5' />
-                        <p className='mb-4'><span className='text-lg font-semibold'>Salary :</span> {salary} (Per Month)</p>
-                        <p className='mb-4'><span className='text-lg font-semibold'>Job Title :</span> {position}</p>
+                        <p className='mb-4'><span className='text-lg font-semibold'><FontAwesomeIcon icon={faDollarSign} /> Salary :</span> {salary} (Per Month)</p>
+                        <p className='mb-4'><span className='text-lg font-semibold'><FontAwesomeIcon icon={faCalendarCheck} /> Job Title :</span> {position}</p>
                         <h2 className='text-xl font-bold mb-8'>Contact Information:</h2>
                         <hr className='border border-black mb-5' />
-                        <p className='mb-4'><span className='text-lg font-semibold'>Phone :</span> {phone}</p>
-                        <p className='mb-4'><span className='text-lg font-semibold'>Email :</span> {email}</p>
-                        <p className='mb-4'><span className='text-lg font-semibold'>Address :</span> {job_location}</p>
+                        <p className='mb-4'><span className='text-lg font-semibold'><FontAwesomeIcon icon={faPhone} /> Phone :</span> {phone}</p>
+                        <p className='mb-4'><span className='text-lg font-semibold'><FontAwesomeIcon icon={faEnvelope} /> Email :</span> {email}</p>
+                        <p className='mb-4'><span className='text-lg font-semibold'></span><FontAwesomeIcon icon={faLocationDot} /> Address : {job_location}</p>
                     </div>
                     <button onClick={() => handleAddToDb(id)} className='btn btn-primary mt-3 w-full text-white font-semibold'>Apply Now</button>
                 </div>

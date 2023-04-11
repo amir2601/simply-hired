@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const AppliedJobs = () => {
     const applieds = useLoaderData();
@@ -61,8 +63,8 @@ const AppliedJobs = () => {
                                         <small className='border border-blue-700 rounded-md py-2 px-4'>{job.job_time}</small>
                                     </div>
                                     <div className='flex gap-3'>
-                                        <span>{job.job_location}</span>
-                                        <span>Salary: {job.salary}</span>
+                                        <span><FontAwesomeIcon icon={faLocationDot} /> {job.job_location}</span>
+                                        <span><FontAwesomeIcon icon={faDollarSign} /> Salary: {job.salary}</span>
                                     </div>
                                 </div>
                                 <Link onClick={() => handleShowDetails(job.id)} to="/jobDetails"><button className='btn btn-primary text-white'>View Details</button></Link>

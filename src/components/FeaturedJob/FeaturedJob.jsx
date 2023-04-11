@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import JobDetails from '../JobDetailes/JobDetails';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const FeaturedJob = ({ featuredJob }) => {
     const [visible, setVisible] = useState(4);
@@ -30,7 +32,10 @@ const FeaturedJob = ({ featuredJob }) => {
                             <small className='border border-blue-400 rounded-md py-2 px-4 mr-3'>{job.job_type}</small>
                             <small className='border border-blue-400 rounded-md py-2 px-4'>{job.job_time}</small>
                         </div>
-                        <p className='mb-5'>{job.job_location}</p>
+                        <div className='mb-5'>
+                            <span className='me-2'><FontAwesomeIcon icon={faLocationDot} /> {job.job_location}</span>
+                            <span><FontAwesomeIcon icon={faDollarSign} /> {job.salary}</span>
+                        </div>
                         <Link to="/jobDetails" className='bg-gradient-to-r from-blue-400 to-blue-700 py-2 px-4 rounded-lg text-white'><button onClick={() => handleShowDetails(job.id)} href="">View Details</button></Link>
                     </div>)
                 }
