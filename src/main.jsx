@@ -14,6 +14,7 @@ import JobCategory from './components/JobCategory/JobCategory';
 import FeaturedJob from './components/FeaturedJob/FeaturedJob';
 import JobDetails from './components/JobDetailes/JobDetails';
 import { customLoader } from './components/CustomLoader/CustomLoader';
+import Error from './components/Error/Error';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
     ]
+  },
+  {
+    path: "*",
+    element: <Error></Error>
   },
 ]);
 
