@@ -13,6 +13,7 @@ import Blog from './components/Blog/Blog';
 import JobCategory from './components/JobCategory/JobCategory';
 import FeaturedJob from './components/FeaturedJob/FeaturedJob';
 import JobDetails from './components/JobDetailes/JobDetails';
+import { customLoader } from './components/CustomLoader/CustomLoader';
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/appliedJobs",
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader: customLoader,
       },
       {
         path: "/blog",

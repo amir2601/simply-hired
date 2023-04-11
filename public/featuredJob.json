@@ -87,6 +87,7 @@
         "phone": "01725401800",
         "email": "stark@gmail.com",
         "job_type": "Onsite",
+        "job_time": "Full-Time",
         "salary": "100k-500k",
         "job_location": "Miami, Usa",
         "job_des": "We are looking for a highly capable machine learning engineer to optimize our machine learning systems. You will be evaluating existing machine learning (ML) processes, performing statistical analysis to resolve data set problems, and enhancing the accuracy of our AI software's predictive automation capabilities.",

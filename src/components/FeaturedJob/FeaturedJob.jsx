@@ -8,10 +8,7 @@ const FeaturedJob = ({featuredJob}) => {
         console.log(typeof id);
         const searchObject = featuredJob.find((j) => j.id == parseInt(id));
         localStorage.setItem('job-details', JSON.stringify(searchObject));
-        console.log(searchObject);
     }
-
-    console.log(featuredJob);
 
     return (
         <div>

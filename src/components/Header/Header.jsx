@@ -4,12 +4,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            {/* <nav className='flex gap-4'>
-                <Link to="/">Home</Link>
-                <Link to="/statistics">Statistics</Link>
-                <Link to="/appliedJobs">Applied Jobs</Link>
-                <Link to="/blog">Blog</Link>
-            </nav> */}
             <div className="navbar bg-base-100 w-5/6 mx-auto">
                 <div className="navbar-start text-2xl font-bold">
                     <Link to="/">Simply Hired</Link>
@@ -27,7 +21,7 @@ const Header = () => {
                     <button className='btn btn-primary'>Star Applying</button>
                 </div> */}
                 <div className="navbar-end">
-                    <a className="btn btn-primary text-white">Star Applying</a>
+                    <a className="btn btn-primary text-white">Start Applying</a>
                 </div>
             </div>
         </div>

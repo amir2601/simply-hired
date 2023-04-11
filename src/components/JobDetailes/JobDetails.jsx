@@ -1,20 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { addToDb } from '../../Utils/fakedb';
 
 const JobDetails = () => {
 
     let jobDetails = {};
-    const storedData = localStorage.getItem('job-details');
-    jobDetails = JSON.parse(storedData);
+    const storedJobData = localStorage.getItem('job-details');
+    jobDetails = JSON.parse(storedJobData);
 
     let showJobDetails = jobDetails;
     
-    const {position, job_des, job_res, edu_req, exp, salary, phone, email, job_location} = showJobDetails;
+    const {id ,position, job_des, job_res, edu_req, exp, salary, phone, email, job_location} = showJobDetails;
+
+    const handleAddToDb = (id) => {
+        addToDb(id)
+    }
 
 
     return (
         <div className='md:w-5/6 mx-auto my-8'>
-            <div className="hero h-[40vh]" style={{ backgroundImage: `url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")` }}>
+            <div className="hero h-[20vh] md:h-[40vh]" style={{ backgroundImage: `url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
@@ -47,7 +52,7 @@ const JobDetails = () => {
                         <p className='mb-4'><span className='text-lg font-semibold'>Email :</span> {email}</p>
                         <p className='mb-4'><span className='text-lg font-semibold'>Address :</span> {job_location}</p>
                     </div>
-                    <Link to="/appliedJobs"><button className='btn btn-primary mt-3 w-full text-white font-semibold'>Apply Now</button></Link>
+                    <button onClick={() => handleAddToDb(id)} className='btn btn-primary mt-3 w-full text-white font-semibold'>Apply Now</button>
                 </div>
             </div>
         </div>

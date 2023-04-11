@@ -4,7 +4,6 @@ import { useLoaderData } from 'react-router-dom';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
 
 const Home = () => {
-    const [fJob, setFJob] = useState([]);
 
     const featuredJob = useLoaderData()
     // console.log(featuredJob);
