@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <div className=''>
+      <div className='min-h-[calc(140vh-132px)]'>
         <Outlet></Outlet>
       </div>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   )
 }
